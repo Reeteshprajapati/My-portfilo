@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        NAV {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+            background-color: rgb(15, 11, 11);
+            box-shadow: 0px 0px 10px 1px rgb(5, 3, 3);
+
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        H1 {
+            width: 120px;
+            color: white;
+            font-size: 40px;
+            margin-left: 120px
+        }
+
+        H1 span {
+            color: #ff004f;
+            font-size: 61px;
+        }
+
+        NAV UL LI {
+            display: inline-block;
+            list-style: none;
+            margin: 10PX 20PX;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        NAV UL LI a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+        }
+
+        NAV UL LI a::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        NAV UL LI a:hover::after {
+            width: 100%;
+        }
+
+        .portfilo {
+            font-size: 44px;
+            color: #ffffff;
+            background-color: black;
+            text-align: center;
+            text-decoration: underline 2PX #ff004f;
+        }
+
+        .portfilo span {
+            color: #ff004f;
+            font-size: 50px;
+            letter-spacing: 2PX;
+        }
+
+        #a {
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+            grid-gap: 10px;
+            margin-top: 50px;
+            display: flex;
+            border-radius: 20px;
+            /* overflow: none;
+            position: relative; */
+        }
+
+        #image img {
+            height: 240px;
+            width: 280px;
+            cursor: pointer;
+            margin-left: 30px;
+            object-fit: cover;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            box-shadow: 1px 1px 2px 3px rgb(226, 220, 220);
+            display: block;
+            transition: transform .5s;
+        }
+
+        #image img:hover {
+            transform: scale(1.1);
+        }
+
+        #image video {
+            height: 240px;
+            width: 280px;
+            cursor: pointer;
+            margin-left: 30px;
+            object-fit: cover;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            box-shadow: 1px 1px 2px 3px rgb(226, 220, 220);
+            display: block;
+            transition: transform .5s;
+        }
+
+        #image video:hover {
+            transform: scale(1.1);
+        }
+
+        /* img:hover{
+            width: auto;
+            height: auto;
+        } */
+
+        /* .title {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(#ff004f, pink);
+            border-radius: 10px;
+            position:absolute;
+            left: 0;
+            bottom: 0px;
+            top: 40px;
+        } */
+
+        #image div {
+
+            margin-left: 100px;
+        }
+
+        .title h3 {
+            text-transform: uppercase;
+            margin-left: -10px;
+            color: white;
+        }
+
+        .title p {
+            color: white;
+        }
+        footer {
+            height: 40px;
+            background-color: rgba(235, 195, 20, 0.788);
+            /* margin-top: -320px; */
+        }
+
+       footer h6  {
+            font-size: 19px;
+            font-weight: 600;
+            text-align: center;
+           
+            /* margin-top: 44px; */
+        }
+
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="HEADER">
+
+            <nav>
+                <H1><a href="index.html"><SPan>R</SPan>EETESH.</a></H1>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <!-- <li><a href="#">SERVICE</a></li> -->
+                    <li><a href="#">PORTFILO</a></li>
+                    <li><a href="RESUME.html">RESUME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <h2 class="portfilo"> <span>P</span>roject</h2>
+
+        <div id="container">
+            <div id="box">
+                <div id="a">
+                    <div id="image">
+                        <img src="pro.png">
+                        <div class="title">
+                            <h3>PROFILE CARD.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div id="image">
+                        <img src="app home.jpeg">
+                        <div class="title">
+                            <h3>DOCTOR WEBSITE .</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="Screenshot_21-2-2024_164158_.jpeg">
+                        <div class="title">
+                            <h3>ANIMATED GALLERY.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="kbc.jpeg">
+                        <div class="title">
+                            <h3>KBC QUIZE.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div id="a">
+
+                    <div id="image">
+                        <img src="flag.jpeg">
+                        <div class="title">
+                            <h3>INDIAN FLAG.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="Screenshot_21-2-2024_165313_.jpeg">
+                        <div class="title">
+                            <h3>IMAGES GALLERY.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="Screenshot_21-2-2024_182619_.jpeg">
+                        <div class="title">
+                            <h3>CARD.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="Screenshot_21-2-2024_175650_.jpeg">
+                        <div class="title">
+                            <h3>SIMPLE CONTACT FORM.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="a">
+                    <div id="image">
+                        <video height="235pxl" width="300" controls>
+                            <source src="carousel and 1 more page - Person 1 - Microsoft​ Edge 2024-02-21 17-10-30.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="title">
+                            <h3>CARSOUSEL ANIMATEION.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <video height="235pxl" width="300" controls>
+                            <source src="price and 2 more pages - Person 1 - Microsoft​ Edge 2024-02-21 17-01-40.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="title">
+                            <h3>PRICES BAR.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <video height="235pxl" width="300" controls>
+                            <source src="Document and 3 more pages - Person 1 - Microsoft​ Edge 2024-02-21 17-03-13.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="title">
+                            <h3>BOOK FLIP ANIMATION.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <video height="235pxl" width="300" controls>
+                            <source src="rotate and 2 more pages - Person 1 - Microsoft​ Edge 2024-02-21 16-52-07.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="title">
+                            <h3>ROTATE ANIMATION.</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div id="a">
+
+
+                    <div id="image">
+                        <video height="235pxl" width="300" controls>
+                            <source
+                                src="Jumping Ball Animation and 2 more pages - Person 1 - Microsoft​ Edge 2024-02-21 18-07-01.mp4"
+                                type="video/mp4">
+                        </video>
+                        <div class="title">
+                            <h3>JUMPING BALL</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <footer>
+            <h6>THANK YOU...</h6>
+        </footer>
+</body>
+
+</html>

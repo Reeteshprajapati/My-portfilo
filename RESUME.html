@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        NAV {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+            background-color: black;
+            background-color: rgb(15, 11, 11);
+            box-shadow: 0px 0px 10px 1px rgb(5, 3, 3);
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        H1 {
+            width: 120px;
+            color: white;
+            font-size: 40px;
+            margin-left: 120px;
+            cursor: pointer;
+        }
+
+        H1 span {
+            color: #ff004f;
+            font-size: 61px;
+        }
+
+        NAV UL LI {
+            display: inline-block;
+            list-style: none;
+            margin: 10PX 20PX;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        NAV UL LI a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+        }
+
+        NAV UL LI a::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        NAV UL LI a:hover::after {
+            width: 100%;
+        }
+
+
+        .resume {
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            margin-left: 500px;
+            margin-top: 30px;
+            font-size: 50px;
+            text-decoration: underline 2px #ff004f;
+
+        }
+
+        .resume span {
+            color: #ff004f;
+            font-size: 65px
+        }
+
+        .resume img {
+            position: absolute;
+            height: 190px;
+            width: 185px;
+            right: 160px;
+            top: 280px;
+            cursor: pointer;
+            /* object-fit: cover; */
+        }
+
+        .namereetesh {
+            color: white;
+            text-transform: capitalize;
+            font-size: 30px;
+            margin-left: 80px;
+            margin-top: 90px;
+            font-style: italic;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        .namereetesh .span1 {
+            font-size: 25px;
+        }
+
+        .namereetesh .span2 {
+            text-transform: lowercase;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        hr {
+            color: #262626;
+        }
+
+        .OBJECTIVE h3 {
+            color: #ff004f;
+            font-size: 28px;
+            margin-left: 80px;
+            letter-spacing: 1px;
+        }
+
+        .OBJECTIVE p {
+            color: #fff;
+            margin-left: 100px;
+            font-size: 22px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+
+        .EDUCATOINALQUALIFICATION h3 {
+            color: #ff004f;
+            font-size: 25px;
+            margin-left: 80px;
+        }
+
+        .EDUCATOINALQUALIFICATION ul li {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .EDUCATOINALQUALIFICATION li {
+            margin-top: 13px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            margin-left: 100px;
+        }
+
+        .otheracademicdetail H3 {
+            color: #ff004f;
+            font-size: 25px;
+            margin-left: 80px;
+            text-transform: uppercase;
+            letter-spacing: 1PX;
+        }
+
+        .otheracademicdetail ul li {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .otheracademicdetail li {
+            margin-top: 13px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+
+        .TECHICALSKILL h3 {
+            color: #ff004f;
+            font-size: 25px;
+            margin-left: 80px;
+            text-transform: uppercase;
+            letter-spacing: 1PX;
+        }
+
+        .TECHICALSKILL ul li {
+            margin-top: 13px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-left: 100px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .workexperience1 h3 {
+            color: #ff004f;
+            font-size: 25px;
+            margin-left: 80px;
+            text-transform: uppercase;
+            letter-spacing: 1PX;
+        }
+
+        .workexperience1 ul li {
+            margin-top: 13px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-left: 100px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .personal h3 {
+            color: #ff004f;
+            font-size: 25px;
+            margin-left: 80px;
+            text-transform: uppercase;
+            letter-spacing: 1PX;
+        }
+
+        .personal p {
+            margin-top: 13px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            font-size: 20px;
+            margin-left: 130px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .personal p .dot {
+            margin-left: 30px;
+        }
+
+        .personal p .name {
+            margin-left: 28px;
+
+        }
+
+        .personal p .dot1 {
+            margin-left: 98px;
+        }
+
+        .personal p .dob {
+            margin-left: 20px;
+        }
+
+        .personal p .dot2 {
+            margin-left: 98px;
+        }
+
+        .personal p .address {
+            margin-left: 21px;
+        }
+
+        .personal p .dot3 {
+            margin-left: 43px;
+        }
+
+        .personal p .marit {
+            margin-left: 21px;
+        }
+
+        /* @media screen (min-width="") {
+    
+} */
+    </style>
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="HEADER">
+
+            <nav>
+                <H1><a href="index.html"><SPan>R</SPan>EETESH.</a></H1>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <!-- <li><a href="#">SERVICE</a></li> -->
+                    <li><a href="portfilo.html">PORTFILO</a></li>
+                    <li><a href="RESUME.html">RESUME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+        <h1 class="resume"><span>r</span>esume</h1>
+        <div>
+            <div class="resume img"><img src="rpbg.png"></div>
+            <h4 class=" namereetesh">reetesh prajapati <br> <span class="span1">+91-7240954668</span> <br><span
+                    class="span2">reeteshprajapati16@gmail.com</span></h4>
+            <hr>
+            <div class="OBJECTIVE">
+                <h3>OBJECTIVE.</h3>
+                <p>To work with an organization where can learn with new skill and increase my abillities for the
+                    organization goals as well as my self.</p>
+            </div>
+            <div class="EDUCATOINALQUALIFICATION">
+                <h3>EDUCATOINAL QUALIFICATION.</h3>
+                <ul>
+                    <li>Pursuing B.Tech by computer science from Adina institute science and technology</li>
+                    <li>Passed out 12th from MP board in 2022 Marks 73%.</li>
+                    <li>Passed out 10th from MP board in 2022 Marks 69%.</li>
+                </ul>
+            </div>
+            <div class="otheracademicdetail">
+                <h3>other academic detail.</h3>
+                <ul>
+                    <li>Bench Dynamo Project by TECH EXPO with certification by Institution inovacation Council.</li>
+                    <li>Workshop by Ethical hacking wiith certification by TECHKRITI (IIT KANPUR).</li>
+                    <li>Workshop by Robotics (INPUT COADING).</li>
+                </ul>
+            </div>
+            <div class="TECHICALSKILL">
+                <h3>TECHICALSKILLs.</h3>
+                <ul>
+                    <li>C & C++ for medium level.</li>
+                    <li>Frontend(WEB DEVELOPER).</li>
+                    <li>Photoshop(PS 7.0).</li>
+                    <li>MS Excel.</li>
+                </ul>
+            </div>
+            <div class="workexperience1">
+                <h3>WORK EXPERIENCE.</h3>
+                <ul>
+
+                    <li>FRESHER.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="personal">
+                <h3>PERSONAL DETAILS.</h3>
+                <p>Father's Name <span class="dot">:</span><span class="name">sh.Lakhan lal Prajapati.</span></p>
+
+                <p>D.O.B. <span class="dot1">: </span> <span class="dob">26-07-2005.</span></p>
+
+                <p>Address<span class="dot2">: </span> <span class="address">Shubhash Nagar Shastri Ward Pagara Road.
+                        Sagar (M.P.)-470002</span></p>
+
+                <p>Marital Status<span class="dot3">: </span> <span class="marit">Unmarried.</span></p>
+            </div>
+            <hr>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* *{
+            margin: 0;padding: 0;
+        } */
+        body {
+            background-color: black;
+           
+
+        }
+
+        NAV {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            cursor: pointer;
+            background-color: rgb(15, 11, 11);
+            box-shadow: 0px 0px 10px 1px rgb(5, 3, 3);
+
+        }
+
+        H1 {
+            width: 120px;
+            color: white;
+            font-size: 40px;
+            margin-left: 120px;
+            text-decoration: none
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        H1 span {
+            color: #ff004f;
+            font-size: 61px;
+        }
+
+        NAV UL LI {
+            display: inline-block;
+            list-style: none;
+            margin: 10PX 20PX;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        NAV UL LI a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+        }
+
+        NAV UL LI a::after {
+            content: '';
+            width: 0%;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        NAV UL LI a:hover::after {
+            width: 100%;
+
+        }
+
+        h2 {
+            color: white;
+            font-size: 35px;
+            text-transform: uppercase;
+            margin-left: 500px;
+        }
+
+
+        h2 span {
+            color: #ff004f;
+            font-size: 40px;
+        }
+
+        .phone {
+            position: relative;
+            min-height: 100vh;
+            /* max-height: 100vh;  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: transparent;
+            color: white;
+            /* transform: translate(0%, -10%); */
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -300px;
+            margin-right: 400px;
+
+        }
+
+        .container .contactinfo {
+            width: 50%;
+            /* display: flex; */
+            flex-direction: column;
+            /* display: grid;
+            grid-gap: 40px; */
+        }
+
+        .container .contactinfo .box {
+            position: relative;
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container .contactinfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            /* transform: translate(0%, -30%); */
+            background-color: #ff004f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer;
+            transition: transform .5s, margin-bottom .5s;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+            /* margin-bottom: 2px; */
+        }
+
+        .text h3 {
+            display: flex;
+            margin-left: 10px;
+            /* cursor: pointer; */
+            /* font-weight:1000; */
+            font-size: 22px;
+
+        }
+
+        .text p {
+            display: flex;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .contactform {
+            position: absolute;
+            margin-top: -290px;
+            /* transform: translate(0%, 10%); */
+            left: 60%;
+            width: 400px;
+            height: 340px;
+            /* padding: 10px; */
+            background-color: rgba(223, 222, 240, 0.620);
+            color: black;
+            border-radius: 20px;
+        }
+
+        .contactform h2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-weight: 500;
+            font-style: oblique;
+            margin-left: -20px;
+            box-shadow: 0 2px 4px 2px rgb(0, 0, 0);
+        }
+
+        .contactform .inputbox input {
+            border-radius: 2px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 0.7px solid black;
+            margin-top: 25px;
+            margin-left: 18px;
+            /* color: transparent; */
+            background-color: transparent;
+            /* outline: none; */
+
+        }
+
+        .contactform .inputbox textarea {
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            margin-top: 25px;
+            margin-left: 18px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgba(223, 200, 200, 0.705);
+            /* outline: none; */
+        }
+
+        .contactform .inputbox span {
+            font-size: 19px;
+            font-weight: 600;
+            margin-left: 10px;
+            /* position: absolute; */
+        }
+
+        button {
+            font-size: 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-left: 170px;
+            margin-top: 25px;
+            cursor: pointer;
+            border: none;
+            background-color: rgba(33, 117, 243, 0.89);
+            color: white;
+            padding: 3px 11px;
+            transition: transform .5s;
+        }
+
+        button:hover {
+            color: black;
+            background-color: #ff004f;
+            transform: scale(1.41);
+            border: none;
+        }
+
+        footer {
+            height: 50px;
+            background-color: rgba(235, 195, 20, 0.788);
+            margin-top: -320px;
+        }
+
+        footer h6 i {
+            font-size: 19px;
+            font-weight: 600;
+            /* text-align: center; */
+            margin-left: 520px;
+            margin-top: 10px;  cursor: pointer;
+        }
+
+        #link {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="HEADER">
+
+            <nav>
+                <H1><a href="index.html"><SPan>R</SPan>EETESH.</a></H1>
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfilo.html">PORTFILO</a></li>
+                    <li><a href="RESUME.html">RESUME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <h2><span>c</span>ontact</h2>
+    <section class="phone">
+
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>shubhash nagar sagar</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91-7240954668</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>reeteshprajapati16@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactform">
+            <form action="">
+                <h2>Send message</h2>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Full name</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Type your message...</span>
+                </div>
+                <button>SEND</button>
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <h6><i class="far fa-copyright">copyright by <a id="link" href="#">reeteshprajapati16@gmail.com</a></i></h6>
+    </footer>
+
+
+</body>
+
+</html>
